@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.container {
+  margin: auto; 
+  overflow: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 85%;
+  max-width: 85%;
+ 
+  max-height:85vh;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #738678;
+  color: #000;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  
+}
+
+.task {
+  /* background: #f4f4f4; */
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.task.reminder {
+  border-left: 5px solid #738678;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
